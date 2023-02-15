@@ -138,6 +138,10 @@ h1{
     color:var(--verde-claro)
 }
 
+.btn-success:hover{
+    background-color: #008000;
+}
+
 #sobre, #habilidades, #portfolio{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -148,5 +152,5 @@ h1{
 }
 
 .rodape{
-    background-color: var(--verde-escuro);
+    background-color: #008000;
 }
