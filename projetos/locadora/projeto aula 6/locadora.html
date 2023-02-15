@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/video.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Locadora Rede Vivo</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light ">
+        <img src="./img/claquete.png" alt="" style="width: 5%; padding: 10px;">
+        <a class="navbar-brand" href="#">Locadora Rede Vivo</a>
+
+        <div class="container-fluid justify-content-end">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link " href="#">Filmes Disponíveis</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Filmes por Categoria</a>
+                <ul class="dropdown-menu  justify-content-end">
+                    <li><a class="dropdown-item" href="#">Ação</a></li>
+                    <li><a class="dropdown-item" href="#">Animação</a></li>
+                    <li><a class="dropdown-item" href="#">Comédia</a></li>
+                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                    <li><a class="dropdown-item" href="#">Ficção científica</a></li>
+                  </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Cadastrar Filme</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <h1 class="text-center mb-3 mt-5">Locadora Rede Vivo</h1>
+
+      <div class="container mt-3">  
+        <table class="table table-striped table-hover table-responsive">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Título</th>
+              <th>Diretor</th>
+              <th>Lançamento</th>
+              <th>Gênero</th>
+              <th>Ator/Atriz principal</th>
+              <th>Nota IMDb</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <th class= "text-center table-primary" colspan="7">Ação</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Homem-Aranha 2</td>
+              <td> Sam Raimi</td>
+              <td>2 de julho de 2004</td>
+              <td>Ação</td>
+              <td>Tobey Maguire</td>
+              <td>7,4</td>
+          </tr>
+            <tr>
+                <td>2</td>
+                <td>Jogos Vorazes</td>
+                <td>Francis Lawrence</td>
+                <td>23 de março de 2012</td>
+                <td>Ação</td>
+                <td>Jennifer Lawrence</td>
+                <td>7,2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>O Preço do Amanhã</td>
+                <td>Andrew Niccol</td>
+                <td>4 de novembro de 2011</td>
+                <td>Ação</td>
+                <td>Justin Timberlake</td>
+                <td>6,7</td>
+            </tr>
+            <tr>
+                <th class= "text-center table-primary" colspan="7">Animação</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>O Rei Leão</td>
+                <td>Rob Minkoff, Roger Allers</td>
+                <td> 8 de julho de 1994</td>
+                <td>Animação</td>
+                <td>James Earl Jones (voz)</td>
+                <td>8,5</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Toy Story 3</td>
+              <td>Lee Unkrich</td>
+              <td> 18 de junho de 2010</td>
+              <td>Animação</td>
+              <td>Tom Hanks (voz)</td>
+              <td>8,3</td>
+            </tr>
+              <tr>
+                <td>3</td>
+                <td>Shrek Para Sempre</td>
+                <td>Mike Mitchell</td>
+                <td>9 de julho de 2010</td>
+                <td>Animação</td>
+                <td>Mike Myers (voz)</td>
+                <td>6,3</td>
+              </tr>
+              <th class= "text-center table-primary" colspan="7">Comédia</th>
+            <tr>
+              <td>1</td>
+              <td>Pulp Fiction: Tempo de Violência</td>
+              <td>Quentin Tarantino</td>
+              <td>18 de fevereiro de 1995</td>
+              <td>Comédia</td>
+              <td>John Travolta</td>
+              <td>8,9</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td> Os Caça-Fantasmas</td>
+              <td>Ivan Reitman</td>
+              <td>20 de dezembro de 1984</td>
+              <td>Comédia</td>
+              <td>Bill Murray</td>
+              <td>7,8</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Apertem os Cintos, o Piloto Sumiu</td>
+              <td>Jim Abrahams, David Zucker, Jerry Zucker</td>
+              <td>26 de dezembro de 1980</td>
+              <td>Comédia</td>
+              <td>Robert Hays</td>
+              <td>7,7</td>
+            </tr>
+
+              <th class= "text-center table-primary" colspan="7">Drama</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>O Poderoso Chefão</td>
+            <td>Francis Ford Coppola</td>
+            <td>7 de julho de 1972</td>
+            <td>Drama</td>
+            <td>Al Pacino</td>
+            <td>9,2</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>A Lista de Schindler</td>
+            <td>Steven Spielberg</td>
+            <td>31 de dezembro de 1993</td>
+            <td>Drama</td>
+            <td>Liam Neeson</td>
+            <td>9,0</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>O Menino do Pijama Listrado</td>
+            <td>Mark Herman</td>
+            <td>12 de setembro de 2008</td>
+            <td>Drama</td>
+            <td> Asa Butterfield</td>
+            <td>7,7</td>
+          </tr>
+          <tr>
+            <th class= "text-center table-primary" colspan="7">Ficção Científica</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Vingadores: Guerra Infinita</td>
+            <td>Anthony Russo, Joe Russo</td>
+            <td>26 de abril de 201</td>
+            <td>Ficção Científica</td>
+            <td>Robert Downey Jr.</td>
+            <td>8,4</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jurassic Park - Parque dos Dinossauros</td>
+            <td>Steven Spielberg</td>
+            <td>13 de junho de 1993</td>
+            <td>Ficção Científica</td>
+            <td>Laura Dern</td>
+            <td>8,2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Perdido em Marte</td>
+            <td>Ridley Scott</td>
+            <td>12 de setembro de 2008</td>
+            <td>Ficção Científica</td>
+            <td>Matt Damon</td>
+            <td>8,1</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="m-5">
+        <hr class="border-primary border-3 opacity-75">
+      </div>
+
+      <h2 class="text-center mb-3 mt-3">Cadastro de Filmes</h2>
+
+      <div class="container mb-5">
+        <form>
+          <!--Linha de código e data-->
+          <div class="row">
+            <div class="mb-3 col">
+              <label for="codFilme" class="form-label">Código:</label>
+              <input type="text" id="codFilme" class="form-control" placeholder="00">
+            </div>
+            <div class="mb-3 col">
+              <label for="anoFilme" class="form-label">Ano:</label>
+              <input type="date" id="anoFilme" class="form-control">
+            </div>
+          </div>
+          <!--Linha do título e diretor-->
+          <div class="row">
+            <div class="mb-3 col">
+              <label for="titleFilme" class="form-label">Título:</label>
+              <input type="text" id="titleFilme" class="form-control" placeholder="Nome do Filme">
+            </div>
+            <div class="mb-3 col">
+              <label for="diretorFilme" class="form-label">Diretor:</label>
+              <input type="text" id="diretorFilme" class="form-control" placeholder="Nome do diretor">
+            </div>
+          </div>
+
+          <!--Ator/Atriz principal e Nota IMDb-->
+          <div class="row">
+            <div class="col">
+              <label for="lbl-ator" class="form-label">Ator/Atriz Principal</label>
+              <input type="text" id="lbl-ator" class="form-control mb-5" placeholder="Nome do(a) Ator/Atriz">
+            </div>
+            <div class="col">
+              <label for="lbl-ator" class="form-label">Nota IMDb</label>
+              <input type="number" id="lbl-ator" class="form-control mb-5" placeholder="0,0" max="10" min="0">
+            </div>
+          </div>
+
+          <!--Linha de gêneros-->
+          <div class="row text-center ">
+            <div class="mb-3">
+              <input type="radio" name="radio" id="btn-acao" class="form-check-input ms-5" value="acao">
+              <label for="btn-acao" class="form-label">Ação</label>
+
+              <input type="radio" name="radio" id="btn-acao" class="form-check-input ms-5" value="acao">
+              <label for="btn-acao" class="form-label">Animação</label>
+
+              <input type="radio" name="radio" id="btn-acao" class="form-check-input ms-5" value="acao">
+              <label for="btn-acao" class="form-label">Comédia</label>
+
+              <input type="radio" name="radio" id="btn-acao" class="form-check-input ms-5" value="acao">
+              <label for="btn-acao" class="form-label">Drama</label>
+
+              <input type="radio" name="radio" id="btn-acao" class="form-check-input ms-5" value="acao">
+              <label for="btn-acao" class="form-label">Ficção Científica</label>
+            </div>
+          </div>
+    
+          <!--Botão de enviar-->
+          <div class="col-auto text-center">
+            <button type="submit" class="btn btn-primary mb-3 mt-3">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"> 
+
+    <title>Aula 6 - Framework</title>
+</head>
+<body>
+    <div class="container form-check">
+        <form>
+            <div class="mb-3">
+                <label for="nome" name="lbl" class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-control-md">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="radio" name="ocupation">
+                <label for="ocupation" class="form-label">Aluno</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="radio" name="ocupation">
+                <label for="ocupation"class="form-label" >Professor</label>
+            </div>
+
+            <div class="mb-3">
+                <input type="checkbox" name="programar">
+                <label for="programar" class="form-label">Eu gosto de programar</label>
+            </div>
+
+            <div class="mb-3">
+                <input type="checkbox" name="passeio">
+                <label for="passeio" class="form-label">Eu gosto de passear com meu cachorro</label>
+            </div>
+
+            <input type="submit" name="enviar" value="Enviar" class="btn btn-primary">
+        </form>
+    </div>
+
+</body>
+</html>
