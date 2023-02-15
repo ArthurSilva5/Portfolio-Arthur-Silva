@@ -1,3 +1,9 @@
+/*Variáveis de cor*/
+:root{
+    --verde-escuro: #008000;
+    --verde-claro: #27cc2f;
+}
+
 .hero_titulo{
     font-size: 4.5rem;
     padding: 15px;
@@ -32,11 +38,16 @@
     position: relative;
 }
 
+h1{
+    text-decoration: underline #008000;
+}
+
 /* Imagem sobre */
 
 .imagemSobre{
     width: 100%;
     margin-bottom: 3rem;
+    height: 50vh;
 }
 
 .servicesText.card{
@@ -59,15 +70,15 @@
 }*/
 
 .servicesText:hover{
-    border: 1px solid #008000;
+    border: 1px solid var(--verde-claro);
 }
 
 .navbar{
-    background-color: #008000;
+    background-color: var(--verde-escuro);
 }
 
 .navbar a{
-    color: #cccbcb;
+    color: whitesmoke;
 }
 
 .navbar a:hover{
@@ -76,35 +87,66 @@
     font-size: 1.2rem;
 }
 
-.card{
-    height: 400px;
+.js{
+    color:#EFD81D;
 }
 
-.card:hover .js{
-    color: #EAD41C;
+.bootstrap{
+    color: #8C0BFD;
 }
 
-.card:hover .bootstrap{
-    color: #7710ED;
+.css{
+    color: #006BC0;
 }
 
-.card:hover .css{
-    color: #0066B6;
+.python{
+    color: #FFD433;
 }
 
-i.fa-brands{
-    font-size: 3rem;
+.card:hover .js, .card:hover .bootstrap, .card:hover .css, .card:hover .python{
+    font-size: 3.5rem;
 }
 
-i.fa-brands:hover{
-    color: #27cc2f;
+.btn-personalizado{
+    background-color: red;
 }
 
 .card-alt{
     height: 15em;
 }
 
-#sobre, #habilidades, #portfolio, #contato{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.card:hover .telefone, .card:hover .email{
+    font-size: 2.8rem;
+}
+
+.contactIcon{
+    font-size: 3.5rem;
+    color: var(--verde-escuro);
+}
+
+.contactIcon:hover{
+    color: var(--verde-claro);
+}
+
+.contact{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.contact:hover{
+    font-size: 3rem;
+    color:var(--verde-claro)
+}
+
+#sobre, #habilidades, #portfolio{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#contato{
+    padding-top: 4rem;
+}
+
+.rodape{
+    background-color: var(--verde-escuro);
 }
