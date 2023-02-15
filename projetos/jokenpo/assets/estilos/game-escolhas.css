@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap'); /*Quicksand*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');       /*Indie Flower*/
+
+:root{
+    /*Fontes*/
+    --fonte-padrao:  'Quicksand', sans-serif;
+    --fonte-manuescrita: 'Indie Flower', cursive;
+
+    /*Cores*/
+    --salmao: #DE856D;
+    --vermelho: #882b2b;
+    --cinza: #b6b6b6;
+    --marrom: #AB4B3C;
+    --cinza-forte: rgb(112, 112, 112);
+}
+
+body{
+    background-color: var(--cinza);
+}
+
+.escolhas{
+   height: 100vh;
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 0.5fr 1fr 0.5fr 0.2fr 1fr;
+   grid-template-areas: 
+   "escolhas-titulo escolhas-titulo escolhas-titulo"
+   "pedra papel tesoura"
+   "btn-jogar btn-jogar btn-jogar"
+   "escolhas-jogador-titulo titulo-vazio escolhas-computador-titulo"
+   "jogador-escolha letra-x computador-escolha"
+   ;
+   grid-gap: 2rem;
+   background-color: var(--cinza);
+   padding: 1.5rem 0px;
+}
+
+.escolhas-titulo{
+    grid-area: escolhas-titulo;
+    text-align: center;
+    font-family: var(--fonte-padrao), sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.pedra{
+    grid-area: pedra;
+}
+
+.papel{
+    grid-area: papel;
+}
+
+.tesoura{
+    grid-area: tesoura;
+}
+
+.escolhas-jogador{
+    border: 3px solid var(--vermelho);
+    cursor: pointer;
+    margin: 0px 1rem;
+    background-color: #FFFFFF;
+}
+
+.escolhas-jogador:hover{
+    border: 3px solid var(--salmao);
+}
+
+.escolhas-jogador img{
+    width: 50%;
+}
+
+.escolhas-btn-jogar{
+    grid-area: btn-jogar;
+    width: 20%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    border: 3px solid var(--vermelho);
+    font-family: var(--fonte-padrao), sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 1rem 0px;
+    cursor: pointer;
+}
+
+.escolhas-btn-jogar:hover{
+    font-size: 2rem;
+    border: 5px solid var(--vermelho);
+}
+
+.escolhas-jogador-titulo{
+    grid-area: escolhas-jogador-titulo;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.titulo-vazio{
+    grid-area: titulo-vazio;
+}
+
+.escolhas-computador-titulo{
+    grid-area: escolhas-computador-titulo;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.jogador-escolha{
+    grid-area: jogador-escolha;
+    border: 5px solid var(--vermelho);
+    margin-left: 1rem;
+    background-color: #FFFFFF;
+}
+
+.computador-escolha{
+    grid-area: computador-escolha;
+    border: 5px solid var(--vermelho);
+    margin-right: 1rem;
+    background-color: #FFFFFF;
+}
+
+.jogador-escolha img, .computador-escolha img{
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+
+.letra-x{
+    grid-area: letra-x;
+    width: 15%;
+    align-self: center;
+    justify-self: center;
+}
+

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap'); /*Quicksand*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');       /*Indie Flower*/
+
+:root{
+    /*Fontes*/
+    --fonte-padrao:  'Quicksand', sans-serif;
+    --fonte-manuescrita: 'Indie Flower', cursive;
+
+    /*Cores*/
+    --salmao: #DE856D;
+    --vermelho: #882b2b;
+    --cinza: #b6b6b6;
+    --marrom: #AB4B3C;
+    --cinza-forte: rgb(112, 112, 112);
+}
+
+@keyframes cores{
+    0%   {background-color: var(--salmao); left:0px; top:0px;}
+    30%  {background-color: var(--marrom); left:200px; top:0px;}
+    60% {background-color: var(--vermelho); left:200px; top:0px;}
+    100% {background-color: var(--salmao); left:0px; top:0px;}
+}
+
+body{
+    animation-name: cores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: ease;
+}
+
+.conteudo{
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.conteudo-titulo{
+    font-family: var(--fonte-manuescrita);
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    text-decoration: underline var(--salmao);
+}
+
+.conteudo-btn{
+    margin: 1rem auto;
+    width: 65%;
+    padding: 1rem;
+    font-family: var(--fonte-padrao);
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    -webkit-transition: 1s;
+}
+
+.conteudo-btn > a{
+    display: inline-block;
+    color: var(--preto);
+    text-decoration: none;
+    width: 100%;
+}
+
+.conteudo-btn:hover{
+    font-size: 2rem;
+    border: 5px dashed var(--vermelho);
+    -webkit-transition: 0.5s;
+}
+
+.conteudo-img{
+    margin: 2rem auto;
+    width: 200px;
+    height: 250px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+@media  screen and (min-width: 1500px) {
+    .conteudo-titulo{
+        font-size: 8rem;
+        font-weight: bolder;
+    }
+
+    .conteudo-btn{
+        width: 90%;
+        height: 15vh;
+        font-size: 4rem;
+        border-radius: 2rem;
+    }
+
+    .conteudo-img{
+        margin: 2rem auto;
+        width: 30vw;
+        height: 30vh;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .conteudo-btn:hover{
+        font-size: 4rem;
+        border: 5px dashed var(--vermelho);
+        -webkit-transition: 0.5s;
+    }
+}

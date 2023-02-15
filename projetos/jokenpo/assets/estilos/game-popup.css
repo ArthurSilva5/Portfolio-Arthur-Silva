@@ -1,0 +1,34 @@
+.popup-jogador, .popup-empate, .popup-computador{
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-jogador img, .popup-empate img, .popup-computador img{
+    width: 100%;
+}
+
+.popup-jogador button, .popup-empate button, .popup-computador button{
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--vermelho);
+    color: #FFFFFF;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap'); /*Quicksand*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');       /*Indie Flower*/
+*{
+    box-sizing: border-box;
+}
+:root{
+    /*Fontes*/
+    --fonte-padrao:  'Quicksand', sans-serif;
+    --fonte-manuescrita: 'Indie Flower', cursive;
+
+    /*Cores*/
+    --salmao: #DE856D;
+    --vermelho: #882b2b;
+    --cinza: #b6b6b6;
+    --marrom: #AB4B3C;
+    --cinza-forte: rgb(112, 112, 112);
+}
+
+.placar{
+    display: grid;
+    height: 15vh;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    background-color: var(--vermelho);
+    width: 100%;
+    height: auto;
+}
+
+.placar-titulo{
+    grid-column: 1 / span 3;
+    font-size: 2rem;
+    color: #dfdede;
+    font-family: var(--fonte-padrao);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
+.placar-item{
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #dfdede;
+    padding-bottom: 2rem;
+}
+

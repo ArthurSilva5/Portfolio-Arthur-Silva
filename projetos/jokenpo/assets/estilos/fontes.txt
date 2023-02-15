@@ -1,0 +1,19 @@
+// Fonte 1 - Quicksand (Padrão)
+<style> @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap'); </style>
+
+font-family: 'Quicksand', sans-serif;
+
+// Fonte 2 - Indie Flower (manuescrita)
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+</style>
+
+font-family: 'Indie Flower', cursive;
+
+// Cores
+salmao: #DE856D
+azul: #6dc6de
+cinza: #bcbcbc
+preto: #000000
+
+

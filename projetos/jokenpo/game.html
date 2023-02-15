@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jokenpô</title>
+    
+    <!--lINKS CSS-->
+    <link rel="stylesheet" href="./assets/estilos/reset.css">
+    <link rel="stylesheet" href="./assets/estilos/game-header.css">
+    <link rel="stylesheet" href="./assets/estilos/game-escolhas.css">
+    <link rel="stylesheet" href="./assets/estilos/game-popup.css">
+    <link rel="stylesheet" href="./assets/estilos/layout-mobile.css">
+
+    <!--lINKS FAVICON-->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="placar">
+        <h3 class="placar-titulo" >Placar:</h3>
+        <p  class="placar-item placar-jogador"    value="0">Jogador: 0</p>
+        <p  class="placar-item placar-computador" value="0">Computador: 0</p>
+        <p  class="placar-item placar-empate"     value="0">Empates: 0</p>
+    </header>
+
+    <main class="escolhas">
+        <!--Escolhas do jogador-->
+        <h1 class="escolhas-titulo">Escolha sua carta:</h1>
+        <button class="escolhas-jogador Pedra"><img src="./assets/img/Pedra.png" alt="Ícone de pedra"></button>
+        <button class="escolhas-jogador Papel"><img src="./assets/img/Papel.png" alt="Ícone de papel"></button>
+        <button class="escolhas-jogador Tesoura"><img src="./assets/img/Tesoura.png" alt="Ícone de tesoura"></button>
+        <button class="escolhas-btn-jogar">Jogar</button>
+
+        <h1 class="escolhas-jogador-titulo">Escolha do Jogador</h1>
+        <div class="jogador-escolha" value="x">
+        </div>
+
+        <h1 class="escolhas-computador-titulo">Escolha do Computador</h1>
+        <div class="computador-escolha" value="1">
+        </div>
+        
+        <img src="./assets/img/letra-x.png" alt="Letra X" class="letra-x">
+    </main>
+
+    
+    <div class="popup-jogador">
+        <img src="./assets/img/jogador-venceu.png" alt="Resultado">
+        <button onclick="close_popup()">OK</button>
+    </div>
+
+    <div class="popup-empate">
+        <img src="./assets/img/empate.png" alt="Resultado">
+        <button onclick="close_popup()">OK</button>
+    </div>
+
+    <div class="popup-computador">
+        <img src="./assets/img/computador-venceu.png" alt="Resultado">
+        <button onclick="close_popup()">OK</button>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
